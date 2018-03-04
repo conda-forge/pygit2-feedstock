@@ -1,9 +1,10 @@
 {% set name = "pygit2" %}
-{% set version_major   = "0" %}
-{% set version_minor   = "25" %}
-{% set version_revison = "0" %}
 {% set version = "0.26.3" %}
 {% set sha256 = "29baa530d6fcbf7cca6a75cf9c78fb88613ca81afb39c62fe492f226f6b61800" %}
+
+{% set version_major   = version.split(".")[0] %}
+{% set version_minor   = version.split(".")[1] %}
+{% set version_revison = version.split(".")[2] %}
 
 package:
   name: {{ name|lower }}
