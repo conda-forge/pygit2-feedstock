@@ -1,6 +1,6 @@
 {% set name = "pygit2" %}
-{% set version = "0.27.0" %}
-{% set sha256 = "6febce4aea72f12ed5a1e7529b91119f21d93cb2ccb3f834eea26af76cc9a4cb" %}
+{% set version = "0.27.1" %}
+{% set sha256 = "1aa5ba1d59370bda158950ba4849bb6e59f13ac7e6fca5e392bfd873bd2c1cf9" %}
 
 {% set version_major   = version.split(".")[0] %}
 {% set version_minor   = version.split(".")[1] %}
