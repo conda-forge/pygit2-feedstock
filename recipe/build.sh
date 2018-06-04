@@ -2,4 +2,4 @@
 
 export LIBGIT2=${PREFIX}
 
-$PYTHON setup.py install --single-version-externally-managed --record record.txt
+python -m pip install --no-deps --ignore-installed .
