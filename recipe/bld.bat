@@ -1,3 +1,3 @@
 set LIBGIT2="%LIBRARY%"
-"%PYTHON%" setup.py install --single-version-externally-managed --record record.txt
+python -m pip install --no-deps --ignore-installed .
 if errorlevel 1 exit 1
