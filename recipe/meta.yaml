@@ -27,6 +27,7 @@ requirements:
 
   host:
     - python
+    - pip
     - cffi
     - libgit2 {{version_major}}.{{version_minor}}.*
 
