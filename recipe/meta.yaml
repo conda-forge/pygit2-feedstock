@@ -15,7 +15,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1000
   features:
     - vc9    # [win and py27]
     - vc10   # [win and py34]
@@ -23,6 +23,9 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+
+  host:
     - python
     - pip
     - cffi
