@@ -23,7 +23,7 @@ Current build status
       </a>
     </td>
   </tr>
-
+    
   <tr>
     <td>Azure</td>
     <td>
@@ -200,3 +200,4 @@ Feedstock Maintainers
 =====================
 
 * [@kszucs](https://github.com/kszucs/)
+
