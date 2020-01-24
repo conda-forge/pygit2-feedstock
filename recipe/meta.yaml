@@ -19,19 +19,20 @@ build:
   features:
     - vc10   # [win and py34]
     - vc14   # [win and py35]
+  skip: True  # [py2k]
 
 requirements:
   build:
     - {{ compiler('c') }}
 
   host:
-    - python >=3
+    - python
     - pip
     - cffi
     - libgit2 0.28.*
 
   run:
-    - python >=3
+    - python
     - cffi
     - six
     - libgit2 0.28.*
