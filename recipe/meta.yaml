@@ -2,8 +2,8 @@
 {% set version = "1.0.0" %}
 {% set sha256 = "d8af401e2e4ec13b76476ec075e0558bc888c486f2026f98bdda9b4ad2ae6a2b" %}
 
-{% set version_major = version.split(".")[0] %}
-{% set version_minor = version.split(".")[1] %}
+# must pin the appropiate libgit2 version documented here:
+# https://www.pygit2.org/install.html#version-numbers
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,6 @@ source:
 build:
   number: 0
   features:
-    - vc9    # [win and py27]
     - vc10   # [win and py34]
     - vc14   # [win and py35]
 
@@ -26,16 +25,16 @@ requirements:
     - {{ compiler('c') }}
 
   host:
-    - python
+    - python >=3
     - pip
     - cffi
-    - libgit2 {{version_major}}.{{version_minor}}.*
+    - libgit2 0.28.*
 
   run:
-    - python
+    - python >=3
     - cffi
     - six
-    - libgit2 {{version_major}}.{{version_minor}}.*
+    - libgit2 0.28.*
 
 test:
   imports:
