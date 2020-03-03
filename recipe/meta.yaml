@@ -29,13 +29,13 @@ requirements:
     - python
     - pip
     - cffi
-    - libgit2 0.28.*
+    - libgit2 1.*
 
   run:
     - python
     - cffi
     - six
-    - libgit2 0.28.*
+    - libgit2 1.*
 
 test:
   imports:
