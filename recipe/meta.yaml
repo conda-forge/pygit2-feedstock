@@ -1,6 +1,6 @@
 {% set name = "pygit2" %}
-{% set version = "1.0.3" %}
-{% set sha256 = "de6c170dc09878e98424430ed6ba2934c01d811fedbc4cdfd71ec1dcd98487e2" %}
+{% set version = "1.1.1" %}
+{% set sha256 = "9255d507d5d87bf22dfd57997a78908010331fc21f9a83eca121a53f657beb3c" %}
 
 # must pin the appropiate libgit2 version documented here:
 # https://www.pygit2.org/install.html#version-numbers
@@ -19,7 +19,7 @@ build:
   features:
     - vc10   # [win and py34]
     - vc14   # [win and py35]
-  skip: True  # [py2k]
+  skip: true  # [py2k]
 
 requirements:
   build:
@@ -43,7 +43,7 @@ test:
 
 about:
   home: http://github.com/libgit2/pygit2
-  summary: 'Python bindings for libgit2.'
+  summary: Python bindings for libgit2.
   license: GPLv2 with linking exception
   license_family: GPL2
   license_file: COPYING
