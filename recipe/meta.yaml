@@ -1,6 +1,6 @@
 {% set name = "pygit2" %}
-{% set version = "1.1.0" %}
-{% set sha256 = "6f495d5b0a3adbd24efe9ef7123db59c4ebd29b8075b8326eed207fb31be40c3" %}
+{% set version = "1.1.1" %}
+{% set sha256 = "9255d507d5d87bf22dfd57997a78908010331fc21f9a83eca121a53f657beb3c" %}
 
 # must pin the appropiate libgit2 version documented here:
 # https://www.pygit2.org/install.html#version-numbers
@@ -45,8 +45,8 @@ test:
 about:
   home: http://github.com/libgit2/pygit2
   summary: Python bindings for libgit2.
-  license: GPLv2 with linking exception
-  license_family: GPL2
+  license: GPL-2.0 WITH GCC-exception-2.0
+  license_family: GPL
   license_file: COPYING
   doc_url: http://www.pygit2.org/
   dev_url: https://github.com/libgit2/pygit2
