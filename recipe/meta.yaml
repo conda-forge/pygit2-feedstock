@@ -45,7 +45,7 @@ test:
 about:
   home: http://github.com/libgit2/pygit2
   summary: Python bindings for libgit2.
-  license: GPL-2.0 WITH linking-exception
+  license: GPL-2.0 WITH GCC-exception-2.0
   license_family: GPL
   license_file: COPYING
   doc_url: http://www.pygit2.org/
