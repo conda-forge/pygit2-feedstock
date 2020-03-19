@@ -33,7 +33,7 @@ requirements:
 
   run:
     - python
-    - cached_property
+    - cached-property
     - cffi
     - six
     - libgit2 0.99.*
