@@ -29,14 +29,14 @@ requirements:
     - python
     - pip
     - cffi
-    - libgit2 1.1.*
+    - libgit2 >=1.3
 
   run:
     - python
     - cached-property
     - cffi
     - six
-    - libgit2 1.1.*
+    - libgit2 >=1.3
 
 test:
   imports:
