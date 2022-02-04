@@ -1,6 +1,6 @@
 {% set name = "pygit2" %}
-{% set version = "1.7.2" %}
-{% set sha256 = "70a4536a35452c31f823b59b6fdb665aa3778a43b73ccda3a4f79fa9962ad2bb" %}
+{% set version = "1.8.0" %}
+{% set sha256 = "6e2c5cff5aa1e43f43103480761152f5c5d6bef40f5c1f50c8758a6e89e66cb6" %}
 
 # must pin the appropiate libgit2 version documented here:
 # https://www.pygit2.org/install.html#version-numbers
