@@ -1,6 +1,5 @@
 {% set name = "pygit2" %}
 {% set version = "1.10.0" %}
-{% set sha256 = "7c751eee88c731b922e4e487ee287e2e40906b2bd32d0bfd2105947f63e867de" %}
 
 # must pin the appropiate libgit2 version documented here:
 # https://www.pygit2.org/install.html#version-numbers
@@ -10,13 +9,11 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 7c751eee88c731b922e4e487ee287e2e40906b2bd32d0bfd2105947f63e867de
 
 build:
   number: 0
-  skip: true  # [py2k]
 
 requirements:
   build:
@@ -29,7 +26,7 @@ requirements:
     - python
     - pip
     - cffi
-    - libgit2 1.4
+    - libgit2 1.5
 
   run:
     - python
