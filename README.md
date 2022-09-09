@@ -390,6 +390,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@efiop](https://github.com/efiop/)
 * [@kszucs](https://github.com/kszucs/)
 * [@xhochy](https://github.com/xhochy/)
 
