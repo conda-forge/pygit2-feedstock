@@ -52,5 +52,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - username
     - kszucs
     - xhochy
