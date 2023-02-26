@@ -1,11 +1,11 @@
-About pygit2
-============
+About pygit2-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygit2-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/libgit2/pygit2
 
 Package license: GPL-2.0-only WITH GCC-exception-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygit2-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python bindings for libgit2.
 
