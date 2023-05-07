@@ -1,4 +1,4 @@
-{% set version = "1.12.0" %}
+{% set version = "1.12.1" %}
 
 # must pin the appropiate libgit2 version documented here:
 # https://www.pygit2.org/install.html#version-numbers
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pygit2/pygit2-{{ version }}.tar.gz
-  sha256: e9440d08665e35278989939590a53f37a938eada4f9446844930aa2ee30d73be
+  sha256: 8218922abedc88a65d5092308d533ca4c4ed634aec86a3493d3bdf1a25aeeff3
 
 build:
   number: 0
