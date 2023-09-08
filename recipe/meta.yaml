@@ -25,7 +25,7 @@ requirements:
     - python
     - pip
     - cffi
-    - libgit2 1.6
+    - libgit2 1.7
 
   run:
     - python
