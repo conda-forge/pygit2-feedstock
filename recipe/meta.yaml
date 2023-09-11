@@ -13,6 +13,8 @@ source:
 
 build:
   number: 0
+  # Since pypy3.9=7.3.12 this doesn't import anymore.
+  skip: true  # [python_impl == "pypy"]
 
 requirements:
   build:
