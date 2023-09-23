@@ -12,7 +12,7 @@ source:
   sha256: 6dde37436fab14264ad3d6cbc5aae3fd555eb9a9680a7bfdd6e564cd77b5e2b8
 
 build:
-  number: 0
+  number: 1
   # Since pypy3.9=7.3.12 this doesn't import anymore.
   skip: true  # [python_impl == "pypy"]
 
