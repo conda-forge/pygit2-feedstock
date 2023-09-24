@@ -1,4 +1,4 @@
-{% set version = "1.13.0" %}
+{% set version = "1.13.1" %}
 
 # must pin the appropiate libgit2 version documented here:
 # https://www.pygit2.org/install.html#version-numbers
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pygit2/pygit2-{{ version }}.tar.gz
-  sha256: 6dde37436fab14264ad3d6cbc5aae3fd555eb9a9680a7bfdd6e564cd77b5e2b8
+  sha256: d8e6d540aad9ded1cf2c6bda31ba48b1e20c18525807dbd837317bef4dccb994
 
 build:
-  number: 1
+  number: 0
   # Since pypy3.9=7.3.12 this doesn't import anymore.
   skip: true  # [python_impl == "pypy"]
 
