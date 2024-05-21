@@ -1,4 +1,4 @@
-{% set version = "1.14.1" %}
+{% set version = "1.15.0" %}
 
 # must pin the appropiate libgit2 version documented here:
 # https://www.pygit2.org/install.html#version-numbers
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pygit2/pygit2-{{ version }}.tar.gz
-  sha256: ec5958571b82a6351785ca645e5394c31ae45eec5384b2fa9c4e05dde3597ad6
+  sha256: a635525ffc74128669de2f63460a94c9d5609634a4875c0aafce510fdeec17ac
 
 build:
-  number: 1
+  number: 0
   # Since pypy3.9=7.3.12 this doesn't import anymore.
   skip: true  # [python_impl == "pypy" or py<39]
 
@@ -22,12 +22,13 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cffi                                   # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
 
   host:
     - python
     - pip
     - cffi
-    - libgit2 1.7
+    - libgit2 1.8
 
   run:
     - python
