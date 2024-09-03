@@ -23,13 +23,12 @@ requirements:
     - cffi                                   # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
-
   host:
     - python
     - pip
+    - setuptools
     - cffi
     - libgit2 1.8
-
   run:
     - python
     - cffi
