@@ -3,7 +3,7 @@
 schema_version: 1
 
 context:
-  version: 1.17.0
+  version: "1.18.0"
 
 package:
   name: pygit2
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pygit2/pygit2-${{ version }}.tar.gz
-  sha256: fa2bc050b2c2d3e73b54d6d541c792178561a344f07e409f532d5bb97ac7b894
+  sha256: fbd01d04a4d2ce289aaa02cf858043679bf0dd1f9855c6b88ed95382c1f5011a
 
 build:
   number: 0
@@ -20,11 +20,10 @@ build:
 requirements:
   build:
     - if: build_platform != target_platform
-      then: python
-    - if: build_platform != target_platform
-      then: cross-python_${{ target_platform }}
-    - if: build_platform != target_platform
-      then: cffi
+      then:
+        - python
+        - cross-python_${{ target_platform }}
+        - cffi
     - ${{ compiler('c') }}
     - ${{ stdlib("c") }}
   host:
