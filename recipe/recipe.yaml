@@ -3,7 +3,7 @@
 schema_version: 1
 
 context:
-  version: "1.19.3"
+  version: "1.20.0"
 
 package:
   name: pygit2
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pygit2/pygit2-${{ version }}.tar.gz
-  sha256: a543e6d4ebb43825564935758dc234e770016fed673b84370d46ae9580558831
+  sha256: 7253735629c22fff412a72c48c204b19c206fda9fcb01e51113d9689194cb1cf
 
 build:
   number: 0
