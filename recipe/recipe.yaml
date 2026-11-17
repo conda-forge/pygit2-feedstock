@@ -14,7 +14,7 @@ source:
   sha256: 1e987fbef899d1bf12aecc10b33acc917d60266ca114428dfc260df4451a555f
 
 build:
-  number: 0
+  number: 1
   skip: match(python, "<3.11")
 
 requirements:
